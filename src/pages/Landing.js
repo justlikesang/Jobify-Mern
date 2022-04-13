@@ -1,13 +1,15 @@
 import logo from '../assets/images/logo.svg';
 import main from '../assets/images/main.svg';
+import Wrapper from '../assets/wrappers/LandingPage';
 
 const Landing = () => {
   return (
-    <main>
+    <Wrapper>
       <nav>
         <img src={logo} alt="jobify" className="logo" />
       </nav>
       <div className="container page">
+        {/* info */}
         <div className="info">
           <h1>
             job <span>tracking</span> app
@@ -20,12 +22,11 @@ const Landing = () => {
             dreamcatcher tattooed activated charcoal. Cornhole meditation
             gochujang, poke adaptogen pour-over shaman kogi migas hot chicken.{' '}
           </p>
-          <button className='btn btn-hero'>
-            Login/Register  
-          </button>
+          <button className="btn btn-hero">Login/Register</button>
         </div>
+        <img src={main} alt="job hunt" className="img main-img" />
       </div>
-    </main>
+    </Wrapper>
   );
 };
 
